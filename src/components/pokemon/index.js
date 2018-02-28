@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import pokemonLoad from './actions/pokemonLoad'
-import pokemonDetail from './actions/pokemonDetail'
 import PokemonList from './pokemonList.jsx'
 
 class Pokemon extends React.Component {
@@ -14,13 +13,13 @@ class Pokemon extends React.Component {
   render () {
     return (
       <div>
-        <PokemonList pokemons={this.props.pokemons} getDetail={pokemonDetail}/>
+        <PokemonList pokemons={this.props.pokemons}/>
       </div>
     )
   }
 }
 
 const mapStateToProps = state => ({pokemons: state.pokemon.pokemons})
-const mapDispatchToProps = dispatch => bindActionCreators({ pokemonLoad, pokemonDetail }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ pokemonLoad }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(Pokemon)

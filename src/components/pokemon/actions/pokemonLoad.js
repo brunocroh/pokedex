@@ -6,7 +6,6 @@ import {
 import axios from 'axios'
 
 const pokemonLoadSuccess = (response) => {
-  console.log({POKEMON_LOAD_SUCCESS})
   return {
     type: POKEMON_LOAD_SUCCESS,
     payload: response
@@ -14,7 +13,6 @@ const pokemonLoadSuccess = (response) => {
 }
 
 const pokemonLoadError = (err) => {
-  console.log({POKEMON_LOAD_ERROR})
   return {
     type: POKEMON_LOAD_ERROR,
     payload: err

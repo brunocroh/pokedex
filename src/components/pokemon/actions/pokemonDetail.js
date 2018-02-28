@@ -3,7 +3,6 @@ import {
   POKEMON_DETAIL_SUCCESS
 } from 'Constants/actionTypes'
 
-
 import axios from 'axios'
 
 const pokemonDetailSuccess = (response) => {
