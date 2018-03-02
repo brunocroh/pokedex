@@ -4,17 +4,20 @@ import { bindActionCreators } from 'redux'
 
 import Button from 'Template/button.jsx'
 
-import pokemonLoad from './actions/pokemonLoad'
+import pokemonLoad from './actions/pokemonLoad.js'
+
+import PokemonSearch from './pokemonSearch.jsx'
 import PokemonList from './pokemonList.jsx'
 
 class Pokemon extends React.Component {
   componentWillMount () {
-    if (!this.props.pokemons.length) this.props.pokemonLoad(this.props.next)
+    this.props.pokemonLoad(this.props.next)
   }
 
   render () {
     return (
       <div>
+        <PokemonSearch/>
         <PokemonList pokemons={this.props.pokemons}/>
         <Button onClick={() => this.props.pokemonLoad(this.props.next)} label='carregar mais'/>
       </div>

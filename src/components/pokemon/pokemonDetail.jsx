@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import pokemonDetail from './actions/pokemonDetail.js'
+import { pokemonDetail } from './actions'
 
 class PokemonDetail extends React.Component {
   componentWillMount () {
