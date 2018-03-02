@@ -16,6 +16,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       Constants: path.resolve(__dirname, 'src/constants'),
+      Template: path.resolve(__dirname, 'src/template'),
       Modules: path.resolve(__dirname, 'node_modules')
     }
   },

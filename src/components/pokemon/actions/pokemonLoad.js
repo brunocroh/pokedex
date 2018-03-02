@@ -19,9 +19,9 @@ const pokemonLoadError = (err) => {
   }
 }
 
-const pokemonLoad = () => {
+const pokemonLoad = (uri = 'https://pokeapi.co/api/v2/pokemon/') => {
   return function (dispatch) {
-    axios.get('https://pokeapi.co/api/v2/pokemon/')
+    axios.get(uri)
       .then(res => {
         dispatch(pokemonLoadSuccess(res))
       })

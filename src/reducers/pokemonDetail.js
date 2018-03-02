@@ -8,7 +8,7 @@ export default (state = { }, action) => {
     case POKEMON_DETAIL_SUCCESS:
       return {
         ...state,
-        view: action.payload.data
+        ...action.payload.data
       }
     case POKEMON_DETAIL_ERROR:
       return { ...state, error: action.payload }
