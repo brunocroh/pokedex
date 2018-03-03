@@ -9,9 +9,12 @@ const INITIAL_STATE = { next: undefined, list: [], query: '' }
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case POKEMON_LOAD_SUCCESS:
+      const { results } = action.payload.data
       return {
         ...state,
-        list: [...state.list, ...action.payload.data.results],
+        list: results
+          ? [action.payload.data]
+          : action.payload.data.results,
         next: action.payload.data.next
       }
     case POKEMON_LOAD_ERROR:
