@@ -29,17 +29,13 @@ module.exports = {
     new CleanWebpackPlugin(
       './public',
       {
-        exclude: ['index.html']
+        exclude: ['index.ejs']
       }
     ),
     new CopyWebpackPlugin([
       {
         from: path.join(__dirname, 'src/assets'),
         to: 'images'
-      },
-      {
-        from: path.join(__dirname, 'src/index.html'),
-        to: './'
       }
     ]),
     new WriteFilePlugin(),
