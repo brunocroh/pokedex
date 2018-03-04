@@ -34,11 +34,11 @@ module.exports = {
     ),
     new CopyWebpackPlugin([
       {
-        from: 'src/assets',
+        from: path.join(__dirname, 'src/assets'),
         to: 'images'
       },
       {
-        from: 'src/index.html',
+        from: path.join(__dirname, 'src/index.html'),
         to: './'
       }
     ]),
