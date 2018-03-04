@@ -1,6 +1,7 @@
 @import '../base/all';
 $blue: #1b82b1;
 $red: #ed3237;
+$green: #89c977;
 
 %button {
   border-radius: 5px;
@@ -24,3 +25,14 @@ $red: #ed3237;
   @extend %button;
   background-color: $red;
 }
+
+.buttonAdd {
+  @extend %button;
+  background-color: $green;
+}
+
+.buttonRemove {
+  @extend %button;
+  background-color: $red;
+}
+

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --inline --hot",
+    "start": "node server",
+    "start:dev": "webpack-dev-server --progress --colors --inline --hot",
     "gulp": "./node_modules/.bin/gulp",
-    "postinstall": "run-s gulp build",
     "build": "webpack --progress -p",
     "lint": "./node_modules/.bin/standard",
     "lint:fix": "./node_modules/.bin/standard --fix"

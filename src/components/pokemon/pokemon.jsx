@@ -9,10 +9,9 @@ import styles from 'Main/App.scss'
 
 import Button from 'Template/Button'
 
-
-
 const pokemon = props => {
   const { name, url, pokemonAdd, pokemonRemove } = props
+  const { pokemonsAdded } = props.state
   return (
     <div className={styles.pokemonCard}>
       <Link className={styles.gridContainer} to={{
@@ -22,8 +21,9 @@ const pokemon = props => {
         <img className={styles.itemCentralized} src={`images/pokemons/${name}.png`} alt={name} />
         <span className={styles.itemCentralized} >{name}</span>
       </Link>
-      <Button label='Adicionar Pokemon' onClick={() => pokemonAdd({name, url})}/>
-      <Button label='Remover Pokemon' onClick={() => pokemonRemove({name, url})}/>
+
+      <Button style={styles.buttonAdd} label='Adicionar Pokemon' onClick={() => pokemonAdd({name, url})}/>
+      <Button style={styles.buttonRemove} label='Remover Pokemon' onClick={() => pokemonRemove({name, url})}/>
     </div>
   )
 }
