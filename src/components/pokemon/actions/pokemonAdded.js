@@ -6,13 +6,13 @@ import {
 export const pokemonAdd = (pokemon) => {
   return {
     type: POKEMON_ADD,
-    payload: pokemon
+    pokemon
   }
 }
 
-export const pokemonRemove = (err) => {
+export const pokemonRemove = (pokemon) => {
   return {
     type: POKEMON_REMOVE,
-    payload: err
+    payload: pokemon
   }
 }
