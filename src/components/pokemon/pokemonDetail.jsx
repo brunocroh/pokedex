@@ -2,6 +2,7 @@ import React from 'react'
 import styles from 'Main/App.scss'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { Link } from 'react-router-dom'
 
 import Loading from 'Template/Loading'
 
@@ -50,26 +51,31 @@ class PokemonDetail extends React.Component {
     }
 
     return (
-      <div className={styles.containerDetail}>
-        <div className={styles.title}>
-          <h2>{pokemon.name}</h2>
+      <div>
+        <Link to='/'>
+          Voltar
+        </Link>
+        <div className={styles.containerDetail}>
+          <div className={styles.title}>
+            <h2>{pokemon.name}</h2>
+          </div>
+          <div className={styles.pokemonPhoto}>
+            <img className={styles.itemCentralized} src={`images/pokemons/${pokemon.name}.png`} alt={pokemon.name} />
+          </div>
+          <div className={styles.pokemonDetails}>
+            {this.renderStats(pokemon)}
+          </div>
+          <div className={styles.pokemonExtras}>
+            {this.renderProperties(pokemon)}
+          </div>
+          <div className={styles.pokemonAblities}>
+            {this.renderAbilities(pokemon)}
+          </div>
+          <div className={styles.pokemonTypes}>
+            {this.renderTypes(pokemon)}
+          </div>
+          {console.log(pokemon)}
         </div>
-        <div className={styles.pokemonPhoto}>
-          <img className={styles.itemCentralized} src={`images/pokemons/${pokemon.name}.png`} alt={pokemon.name} />
-        </div>
-        <div className={styles.pokemonDetails}>
-          {this.renderStats(pokemon)}
-        </div>
-        <div className={styles.pokemonExtras}>
-          {this.renderProperties(pokemon)}
-        </div>
-        <div className={styles.pokemonAblities}>
-          {this.renderAbilities(pokemon)}
-        </div>
-        <div className={styles.pokemonTypes}>
-          {this.renderTypes(pokemon)}
-        </div>
-        {console.log(pokemon)}
       </div>
     )
   }

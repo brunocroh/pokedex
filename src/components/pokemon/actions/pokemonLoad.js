@@ -1,6 +1,7 @@
 import {
   POKEMON_LOAD_ERROR,
-  POKEMON_LOAD_SUCCESS
+  POKEMON_LOAD_SUCCESS,
+  POKEMON_LOAD_REPLACE
 } from 'Constants/actionTypes'
 
 import { request, receive } from './fetching'
@@ -22,7 +23,15 @@ const pokemonLoadError = (err) => {
   }
 }
 
-const pokemonLoad = (
+export const pokemonLoadReplace = (pokemons) => {
+  return {
+    type: POKEMON_LOAD_REPLACE,
+    query: POKEMON_LOAD_REPLACE,
+    pokemons
+  }
+}
+
+export const pokemonLoad = (
   uri = 'https://pokeapi.co/api/v2/pokemon/',
   query = ''
 ) => {
@@ -39,6 +48,3 @@ const pokemonLoad = (
       })
   }
 }
-
-
-export default pokemonLoad

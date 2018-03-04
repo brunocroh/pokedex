@@ -18,7 +18,7 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         list: state.list
-          .filter(i => i.name !== action.pokemon)
+          .filter(i => i.name !== action.pokemon.name)
       }
     default:
       return state

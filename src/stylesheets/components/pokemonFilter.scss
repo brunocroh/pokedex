@@ -1,0 +1,5 @@
+@import '../base/all';
+
+.containerFilter {
+  @include grid(5px, repeat(2, 147.5px))
+}

@@ -1,6 +1,8 @@
 import {
   POKEMON_LOAD_ERROR,
-  POKEMON_LOAD_SUCCESS
+  POKEMON_LOAD_SUCCESS,
+  POKEMON_LOAD_REPLACE,
+  POKEMON_SHOW_ALL
 } from 'Constants/actionTypes'
 
 import * as _ from 'lodash'
@@ -13,6 +15,8 @@ export default (state = INITIAL_STATE, action) => {
       return listPaginateFiltering(state, action)
     case POKEMON_LOAD_ERROR:
       return { ...state, error: action.payload }
+    case POKEMON_LOAD_REPLACE:
+      return { ...state, list: action.pokemons }
     default:
       return state
   }

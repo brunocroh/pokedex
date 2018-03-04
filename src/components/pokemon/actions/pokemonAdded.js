@@ -13,6 +13,6 @@ export const pokemonAdd = (pokemon) => {
 export const pokemonRemove = (pokemon) => {
   return {
     type: POKEMON_REMOVE,
-    payload: pokemon
+    pokemon
   }
 }

@@ -7,8 +7,9 @@ import { bindActionCreators } from 'redux'
 import Button from 'Template/Button'
 import Loading from 'Template/Loading'
 
-import pokemonLoad from './actions/pokemonLoad'
+import { pokemonLoad } from './actions/pokemonLoad'
 
+import PokemonFilter from './pokemonFilter'
 import PokemonSearch from './pokemonSearch'
 import PokemonList from './pokemonList'
 
@@ -26,7 +27,10 @@ class Pokemon extends React.Component {
 
     return (
       <div className={styles.rootContainer}>
-        <PokemonSearch/>
+        <div>
+          <PokemonSearch/>
+          <PokemonFilter/>
+        </div>
         <PokemonList pokemons={pokemons}/>
         <Button style={styles.buttonBlue} onClick={() => pokemonLoad(this.props.next)} label='carregar mais'/>
       </div>

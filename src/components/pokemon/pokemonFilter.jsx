@@ -5,29 +5,28 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import Button from 'Template/Button'
-import pokemonLoad from './actions/pokemonLoad.js'
+import { pokemonLoad, pokemonLoadReplace } from './actions/pokemonLoad'
 
 const pokemonFilter = props => {
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      props.pokemonLoad(undefined, e.target.value)
-    }
+  const onlyAdded = (e) => {
+    props.pokemonLoadReplace(props.pokemons)
+  }
+
+  const allPokemons = (e) => {
+    props.pokemonLoad()
   }
 
   return (
     <div>
-      <div className={styles.container}>
-        <input type="text"
-          className={styles.input}
-          placeholder='Nome ou código'
-          onKeyPress={handleKeyPress}/>
-        <Button style={styles.buttonRed} icon='search' onClick={handleKeyPress} />
+      <div className={styles.containerFilter}>
+        <Button label='Mostrar Apenas Pokemons Adicionados' style={styles.buttonRed} onClick={onlyAdded} />
+        <Button label='Mostrar Todos os Pokemons' style={styles.buttonAdd} onClick={allPokemons} />
       </div>
     </div>
   )
 }
 
-const mapStateToProps = state => ({next: state.pokemon.next})
-const mapDispatchToProps = dispatch => bindActionCreators({ pokemonLoad }, dispatch)
+const mapStateToProps = state => ({pokemons: state.pokemonsAdded.list})
+const mapDispatchToProps = dispatch => bindActionCreators({ pokemonLoadReplace, pokemonLoad }, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(pokemonSearch)
+export default connect(mapStateToProps, mapDispatchToProps)(pokemonFilter)
