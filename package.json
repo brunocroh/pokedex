@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --colors --inline --hot",
+    "gulp": "./node_modules/.bin/gulp",
     "build": "webpack --progress -p",
     "lint": "./node_modules/.bin/standard",
     "lint:fix": "./node_modules/.bin/standard --fix"
@@ -35,6 +36,8 @@
     "eslint-plugin-standard": "^3.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
     "jest": "^22.4.2",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",

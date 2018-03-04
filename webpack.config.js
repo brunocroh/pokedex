@@ -36,6 +36,10 @@ module.exports = {
       {
         from: 'src/assets',
         to: 'images'
+      },
+      {
+        from: 'src/index.html',
+        to: './'
       }
     ]),
     new WriteFilePlugin(),
