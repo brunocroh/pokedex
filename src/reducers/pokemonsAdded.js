@@ -12,13 +12,13 @@ export default (state = INITIAL_STATE, action) => {
     case POKEMON_ADD:
       return {
         ...state,
-        list: _.uniqBy([...state.list, action.pokemon.name])
+        list: _.uniqBy([...state.list, action.payload.name])
       }
     case POKEMON_REMOVE:
       return {
         ...state,
         list: state.list
-          .filter(i => i.name !== action.pokemon.name)
+          .filter(i => i.name !== action.payload.name)
       }
     default:
       return state

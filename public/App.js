@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "406d31de216192a8da35"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4f685a4fa442fa367c78"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -51029,12 +51029,12 @@ exports.default = function () {
   switch (action.type) {
     case _actionTypes.POKEMON_ADD:
       return _extends({}, state, {
-        list: _.uniqBy([].concat(_toConsumableArray(state.list), [action.pokemon.name]))
+        list: _.uniqBy([].concat(_toConsumableArray(state.list), [action.payload.name]))
       });
     case _actionTypes.POKEMON_REMOVE:
       return _extends({}, state, {
         list: state.list.filter(function (i) {
-          return i.name !== action.pokemon.name;
+          return i.name !== action.payload.name;
         })
       });
     default:
@@ -55493,16 +55493,23 @@ var pokemon = function pokemon(props) {
         name
       )
     ),
-    _react2.default.createElement(_Button2.default, { label: 'Adicionar Pokemon', onClick: pokemonAdd({ name: name, url: url }) }),
-    _react2.default.createElement(_Button2.default, { label: 'Remover Pokemon', onClick: pokemonRemove({ name: name, url: url }) })
+    _react2.default.createElement(_Button2.default, { label: 'Adicionar Pokemon', onClick: function onClick() {
+        return pokemonAdd({ name: name, url: url });
+      } }),
+    _react2.default.createElement(_Button2.default, { label: 'Remover Pokemon', onClick: function onClick() {
+        return pokemonRemove({ name: name, url: url });
+      } })
   );
 };
 
+var mapStateToProps = function mapStateToProps(state) {
+  return { state: state };
+};
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return (0, _redux.bindActionCreators)({ pokemonAdd: _pokemonAdded.pokemonAdd, pokemonRemove: _pokemonAdded.pokemonRemove }, dispatch);
 };
 
-exports.default = (0, _reactRedux.connect)(mapDispatchToProps)(pokemon);
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(pokemon);
 
 /***/ }),
 /* 196 */
