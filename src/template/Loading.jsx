@@ -3,6 +3,8 @@ import styles from 'Main/App.scss'
 
 export default props => (
   <div className={styles.centralize} >
-    <img className={styles.rotate} src="/images/util/loading.png" alt="Loading" />
+    <div className={styles.imgWrapper}>
+      <img className={styles.rotate} src="/images/util/loading.png" alt="Loading" />
+    </div>
   </div>
 )

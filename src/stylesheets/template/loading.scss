@@ -1,8 +1,15 @@
 
 .centralize {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.imgWrapper {
+  width: 100px;
 }
 
 @-webkit-keyframes rotating {
@@ -36,5 +43,5 @@
 }
 
 .rotate {
-  animation: rotating 0.5s linear infinite;
+  animation: rotating 1s linear infinite;
 }

@@ -27,7 +27,7 @@ function listPaginateFiltering (state, action) {
 
   state = results
     ? { ...state, list: _.uniqBy([...state.list, ...results], 'name') }
-    : { ...state, list: [action.payload.data] }
+    : { ...state, list: action.payload.data.forms }
 
   return state
 }

@@ -3,6 +3,8 @@ import {
   POKEMON_DETAIL_SUCCESS
 } from 'Constants/actionTypes'
 
+import { request, receive } from './fetching'
+
 import axios from 'axios'
 
 const pokemonDetailSuccess = (response) => {
@@ -20,10 +22,12 @@ const pokemonDetailError = (err) => {
 }
 
 const pokemonDetail = (url) => {
-  return async function (dispatch) {
+  return function (dispatch) {
+    dispatch(request())
     axios.get(url)
       .then(res => {
         dispatch(pokemonDetailSuccess(res))
+        dispatch(receive())
       })
       .catch(err => {
         dispatch(pokemonDetailError(err))

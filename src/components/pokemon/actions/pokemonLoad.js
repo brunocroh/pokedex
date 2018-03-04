@@ -1,9 +1,9 @@
 import {
   POKEMON_LOAD_ERROR,
-  POKEMON_LOAD_SUCCESS,
-  REQUEST_POKEMONS,
-  RECEIVE_POKEMONS
+  POKEMON_LOAD_SUCCESS
 } from 'Constants/actionTypes'
+
+import { request, receive } from './fetching'
 
 import axios from 'axios'
 
@@ -27,28 +27,18 @@ const pokemonLoad = (
   query = ''
 ) => {
   return function (dispatch) {
-    dispatch(requestPokemons())
+    dispatch(request())
     axios.get(`${uri}${query}`)
       .then(res => {
         dispatch(pokemonLoadSuccess(res, query))
-        receivePokemons()
+        receive()
       })
       .catch(err => {
         dispatch(pokemonLoadError(err))
+        pokemonLoad(uri, query)
       })
   }
 }
 
-const requestPokemons = () => {
-  return {
-    type: REQUEST_POKEMONS
-  }
-}
-
-const receivePokemons = () => {
-  return {
-    type: RECEIVE_POKEMONS
-  }
-}
 
 export default pokemonLoad

@@ -1,13 +1,63 @@
 @import '../base/all';
 
-.containerDetail {
+@mixin baseContainer {
   @include card;
   @include grid(10%, auto);
-  grid-template-areas:
-  "a a b b b b b"
-  "a a b b b b b"
-  "c c b b b b b"
-  "c c b b b b b";
+}
+
+@media (min-width: 320px){
+  .containerDetail {
+    @include baseContainer;
+    grid-row-gap: 10px;
+    grid-template-areas:
+    "s"
+    "a"
+    "b"
+    "c";
+  }
+} 
+
+@media (min-width: 540px){
+  .containerDetail {
+    @include baseContainer;
+    grid-template-areas:
+    "s b"
+    "a b"
+    "a b"
+    "c b"
+    "c b";
+  }
+} 
+
+@media (min-width: 840px){
+  .containerDetail {
+    @include baseContainer;
+    grid-template-areas:
+    "s b c"
+    "a b c"
+    "a b c";
+  }
+} 
+
+@media (min-width: 1200px){
+  .containerDetail {
+    @include baseContainer;
+    grid-template-areas:
+    ". s b c ."
+    ". a b c ."
+    ". a b c .";
+  }
+} 
+
+
+.title {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  text-align: left;
+  grid-area: s;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .pokemonPhoto {
@@ -18,9 +68,19 @@
 .pokemonDetails {
   @include card(#30a7d7, #fff, 10px, 100%);
   grid-area: b;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1px;
+
+  .stat {
+    display: block;
+  }
 }
 
 .pokemonExtras {
   @include card(#95ccaf, #fff, 10px, 1em);
   grid-area: c;
+  .propertie {
+    display: block;
+  }
 }
