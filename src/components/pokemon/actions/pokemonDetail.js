@@ -20,7 +20,7 @@ const pokemonDetailError = (err) => {
 }
 
 const pokemonDetail = (url) => {
-  return function (dispatch) {
+  return async function (dispatch) {
     axios.get(url)
       .then(res => {
         dispatch(pokemonDetailSuccess(res))

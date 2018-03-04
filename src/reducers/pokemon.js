@@ -1,27 +1,33 @@
 import {
   POKEMON_LOAD_ERROR,
-  POKEMON_LOAD_SUCCESS,
-  POKEMON_QUERY
+  POKEMON_LOAD_SUCCESS
 } from 'Constants/actionTypes'
+
+import * as _ from 'lodash'
 
 const INITIAL_STATE = { next: undefined, list: [], query: '' }
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case POKEMON_LOAD_SUCCESS:
-      const { results } = action.payload.data
-      return {
-        ...state,
-        list: results
-          ? [action.payload.data]
-          : action.payload.data.results,
-        next: action.payload.data.next
-      }
+      return listPaginateFiltering(state, action)
     case POKEMON_LOAD_ERROR:
       return { ...state, error: action.payload }
-    case POKEMON_QUERY:
-      return { ...state, query: action.query }
     default:
       return state
   }
+}
+
+function listPaginateFiltering (state, action) {
+  const { results } = action.payload.data
+  state = { ...state, next: action.payload.data.next }
+  state = state.query === action.query
+    ? state
+    : { ...state, list: [], query: action.query }
+
+  state = results
+    ? { ...state, list: _.uniqBy([...state.list, ...results], 'name') }
+    : { ...state, list: [action.payload.data] }
+
+  return state
 }

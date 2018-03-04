@@ -1,31 +1,51 @@
 import React from 'react'
+import styles from 'Main/App.scss'
+
+
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import Button from 'Template/button.jsx'
+import Button from 'Template/Button'
+import Loading from 'Template/Loading'
 
-import pokemonLoad from './actions/pokemonLoad.js'
+import pokemonLoad from './actions/pokemonLoad'
 
-import PokemonSearch from './pokemonSearch.jsx'
-import PokemonList from './pokemonList.jsx'
+import PokemonSearch from './pokemonSearch'
+import PokemonList from './pokemonList'
 
 class Pokemon extends React.Component {
   componentWillMount () {
     this.props.pokemonLoad(this.props.next)
   }
 
+  componentDidMount () {
+
+  }
+
   render () {
+    let { pokemonLoad, pokemons, isFetching } = this.props
+
+    if (true) {
+      return <Loading /> 
+    }
+
     return (
-      <div>
+      <div className={styles.rootContainer}>
         <PokemonSearch/>
-        <PokemonList pokemons={this.props.pokemons}/>
-        <Button onClick={() => this.props.pokemonLoad(this.props.next)} label='carregar mais'/>
+        <PokemonList pokemons={pokemons}/>
+        <Button style={styles.buttonBlue} onClick={() => pokemonLoad(this.props.next)} label='carregar mais'/>
       </div>
     )
   }
 }
 
-const mapStateToProps = state => ({pokemons: state.pokemon.list, next: state.pokemon.next})
+const mapStateToProps = state => (
+  {
+    pokemons: state.pokemon.list,
+    next: state.pokemon.next,
+    isFetching: state.fetchingPokemons
+  }
+)
 const mapDispatchToProps = dispatch => bindActionCreators({ pokemonLoad }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(Pokemon)

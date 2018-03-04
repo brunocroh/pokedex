@@ -1,11 +1,15 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const WriteFilePlugin = require('write-file-webpack-plugin')
+
 const path = require('path')
 
 module.exports = {
-  entry: ['babel-polyfill', './src/index.jsx'],
+  entry: ['./src/index.jsx', './src/main/App.scss'],
   output: {
     path: path.join(__dirname, '/public'),
-    filename: './app.js'
+    filename: './App.js'
   },
   devServer: {
     port: 3000,
@@ -16,12 +20,27 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       Constants: path.resolve(__dirname, 'src/constants'),
+      Main: path.resolve(__dirname, 'src/main'),
       Template: path.resolve(__dirname, 'src/template'),
       Modules: path.resolve(__dirname, 'node_modules')
     }
   },
   plugins: [
+    new CleanWebpackPlugin(
+      './public',
+      {
+        exclude: ['index.html']
+      }
+    ),
+    new CopyWebpackPlugin([
+      {
+        from: 'src/assets',
+        to: 'images'
+      }
+    ]),
+    new WriteFilePlugin(),
     new ExtractTextPlugin('app.css')
+
   ],
   module: {
     rules: [
@@ -34,6 +53,14 @@ module.exports = {
         }
       },
       {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader?importLoaders=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          'sass-loader'
+        ]
+      },
+      {
         test: /\.css$/,
         use: [
           { loader: 'style-loader' },
@@ -41,8 +68,21 @@ module.exports = {
         ]
       },
       {
+        test: /\.(jpg|png|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000
+            }
+          }
+        ]
+      },
+      {
         test: /.\.woff|.woff2|.ttf|.eot|svg*.*$/,
-        use: 'file-loader'
+        use: [
+          'file-loader'
+        ]
       }
     ]
   }

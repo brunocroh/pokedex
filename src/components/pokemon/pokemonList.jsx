@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from 'Main/App.scss'
 
 import Pokemon from './pokemon'
 
@@ -14,7 +15,7 @@ export default props => {
   }
 
   return (
-    <div>
+    <div className={styles.gridPokemons}>
       {renderPokemons()}
     </div>
   )

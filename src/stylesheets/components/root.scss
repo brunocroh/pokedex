@@ -1,0 +1,6 @@
+@import '../base/all';
+
+.rootContainer {
+  height: 100%;
+  @include grid(50px, 100%);
+}

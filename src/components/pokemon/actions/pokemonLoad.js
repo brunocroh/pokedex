@@ -1,14 +1,17 @@
 import {
   POKEMON_LOAD_ERROR,
-  POKEMON_LOAD_SUCCESS
+  POKEMON_LOAD_SUCCESS,
+  REQUEST_POKEMONS,
+  RECEIVE_POKEMONS
 } from 'Constants/actionTypes'
 
 import axios from 'axios'
 
-const pokemonLoadSuccess = (response) => {
+const pokemonLoadSuccess = (response, query) => {
   return {
     type: POKEMON_LOAD_SUCCESS,
-    payload: response
+    payload: response,
+    query
   }
 }
 
@@ -24,13 +27,27 @@ const pokemonLoad = (
   query = ''
 ) => {
   return function (dispatch) {
+    dispatch(requestPokemons())
     axios.get(`${uri}${query}`)
       .then(res => {
-        dispatch(pokemonLoadSuccess(res))
+        dispatch(pokemonLoadSuccess(res, query))
+        receivePokemons()
       })
       .catch(err => {
         dispatch(pokemonLoadError(err))
       })
+  }
+}
+
+const requestPokemons = () => {
+  return {
+    type: REQUEST_POKEMONS
+  }
+}
+
+const receivePokemons = () => {
+  return {
+    type: RECEIVE_POKEMONS
   }
 }
 

@@ -1,0 +1,26 @@
+@import '../base/all';
+
+.containerDetail {
+  @include card;
+  @include grid(10%, auto);
+  grid-template-areas:
+  "a a b b b b b"
+  "a a b b b b b"
+  "c c b b b b b"
+  "c c b b b b b";
+}
+
+.pokemonPhoto {
+  grid-area: a;
+  align-self: start;
+}
+
+.pokemonDetails {
+  @include card(#30a7d7, #fff, 10px, 100%);
+  grid-area: b;
+}
+
+.pokemonExtras {
+  @include card(#95ccaf, #fff, 10px, 1em);
+  grid-area: c;
+}

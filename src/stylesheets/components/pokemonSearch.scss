@@ -1,0 +1,12 @@
+@import '../base/all';
+
+.container {
+  @include grid(5px, 245px 50px )
+}
+
+.input {
+  border:1px solid #BEBEBE;
+  padding: 10px;
+  font-size: 1.2em;
+  margin:0px;
+}

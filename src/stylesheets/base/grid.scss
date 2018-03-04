@@ -1,0 +1,15 @@
+.teste {
+  color: red;
+}
+
+@mixin grid($gap:null, $cols...) {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: $cols;
+  grid-gap: $gap;
+}
+
+@mixin itemCentralized {
+  align-self: center;
+  justify-self: center
+}

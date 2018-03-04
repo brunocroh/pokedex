@@ -1,0 +1,26 @@
+@import '../base/all';
+$blue: #1b82b1;
+$red: #ed3237;
+
+%button {
+  border-radius: 5px;
+  margin: 0px;
+  color: #FFF;
+  cursor: pointer;
+  border-width: 0px 0px 0px 0px;
+}
+
+.buttonBlue {
+  @extend %button;
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: $blue;
+  position: relative;
+  width: 40%;
+  justify-self: center;
+}
+
+.buttonRed {
+  @extend %button;
+  background-color: $red;
+}

@@ -1,0 +1,7 @@
+@mixin card($bg: #F2F2F2, $color:#fff, $radius: 5px, $fSize: 150%) {
+  background-color: $bg;
+  color: $color;
+  border-radius: $radius;
+  padding: 20px;
+  font-size: $fSize;
+}

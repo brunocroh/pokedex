@@ -1,0 +1,27 @@
+@import '../base/all';
+
+$gapGrid: 20px;
+
+@media (min-width: 320px){
+  .gridPokemons {
+    @include grid($gapGrid, repeat(1, auto))
+  }
+} 
+
+@media (min-width: 540px){
+  .gridPokemons {
+    @include grid($gapGrid, repeat(2, auto))
+  }
+} 
+
+@media (min-width: 840px){
+  .gridPokemons {
+    @include grid($gapGrid, repeat(3, auto))
+  }
+} 
+
+@media (min-width: 1200px){
+  .gridPokemons {
+    @include grid($gapGrid, repeat(4, auto))
+  }
+} 

@@ -1,0 +1,18 @@
+@import '../base/all';
+
+.pokemonCard {
+  background-size: cover;
+  @include card;
+}
+
+.cardContent {
+  border-radius: 25px;
+}
+
+.itemCentralized {
+  @include itemCentralized;
+}
+
+.gridContainer {
+  @include grid;
+}
