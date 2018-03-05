@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "run-s gulp build",
     "start": "node server",
     "start:dev": "webpack-dev-server --progress --colors --inline --hot",
     "gulp": "./node_modules/.bin/gulp",
