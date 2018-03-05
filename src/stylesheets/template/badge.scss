@@ -4,17 +4,17 @@
   color: white;
 }
 
-span .eletric{
+.eletric{
   @extend %badge;
   background-color: #729f3f;
 }
 
-span .grass{
+.grass{
   @extend %badge;
   background-color: #9bcc50;
 }
 
-span .bug{
+.bug{
   @extend %badge;
   background-color: #729f3f;
 }
@@ -24,32 +24,32 @@ span .bug{
   background-color: #fd7d24;
 }
 
-span .fairy{
+.fairy{
   @extend %badge;
   background-color: #fdb9e9;
 }
 
-span .ground{
+.ground{
   @extend %badge;
   background-color: #ab9842;
 }
 
-span .poison{
+.poison{
   @extend %badge;
   background-color: #b97fc9;
 }
 
-span .flying{
+.flying{
   @extend %badge;
   background-color: #3dc7ef;
 }
 
-span .normal{
+.normal{
   @extend %badge;
   background-color: #a4acaf;
 }
 
-span .water{
+.water{
   @extend %badge;
   background-color: #3dc7ef;
 }
