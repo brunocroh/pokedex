@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "dcb6a78a67f75713ef57"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "39e2acf81f3998b28a09"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -2877,7 +2877,7 @@ exports = module.exports = __webpack_require__(55)(false);
 
 
 // module
-exports.push([module.i, ".src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__pokemonCard___2hy06 {\n  background-size: cover;\n  background-color: #F2F2F2;\n  color: #fff;\n  border-radius: 5px;\n  padding: 20px;\n  font-size: 150%; }\n\n.src-main-___App__cardContent___7Gm4B {\n  border-radius: 25px; }\n\n.src-main-___App__itemCentralized___2u3Mk {\n  align-self: center;\n  justify-self: center; }\n\n.src-main-___App__gridContainer___38FDW {\n  margin: 10px;\n  display: grid; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n@media (min-width: 320px) {\n  .src-main-___App__gridPokemons___3xDMy {\n    margin: 10px;\n    display: grid;\n    grid-template-columns: repeat(1, auto);\n    grid-gap: 20px; } }\n\n@media (min-width: 540px) {\n  .src-main-___App__gridPokemons___3xDMy {\n    margin: 10px;\n    display: grid;\n    grid-template-columns: repeat(2, auto);\n    grid-gap: 20px; } }\n\n@media (min-width: 840px) {\n  .src-main-___App__gridPokemons___3xDMy {\n    margin: 10px;\n    display: grid;\n    grid-template-columns: repeat(3, auto);\n    grid-gap: 20px; } }\n\n@media (min-width: 1200px) {\n  .src-main-___App__gridPokemons___3xDMy {\n    margin: 10px;\n    display: grid;\n    grid-template-columns: repeat(4, auto);\n    grid-gap: 20px; } }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__container___1abL6 {\n  margin: 10px;\n  display: grid;\n  grid-template-columns: 245px 50px;\n  grid-gap: 5px; }\n\n.src-main-___App__input___2FVMN {\n  border: 1px solid #BEBEBE;\n  padding: 10px;\n  font-size: 1.2em;\n  margin: 0px; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__containerFilter___U28LW {\n  margin: 10px;\n  display: grid;\n  grid-template-columns: repeat(2, 147.5px);\n  grid-gap: 5px; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n@media (min-width: 320px) {\n  .src-main-___App__containerDetail___33MiA {\n    background-color: #F2F2F2;\n    color: #fff;\n    border-radius: 5px;\n    padding: 20px;\n    font-size: 150%;\n    margin: 10px;\n    display: grid;\n    grid-template-columns: auto;\n    grid-gap: 10%;\n    grid-row-gap: 10px;\n    grid-template-areas: \"s\" \"a\" \"b\" \"c\"; } }\n\n@media (min-width: 540px) {\n  .src-main-___App__containerDetail___33MiA {\n    background-color: #F2F2F2;\n    color: #fff;\n    border-radius: 5px;\n    padding: 20px;\n    font-size: 150%;\n    margin: 10px;\n    display: grid;\n    grid-template-columns: auto;\n    grid-gap: 10%;\n    grid-template-areas: \"s b\" \"a b\" \"a b\" \"c b\" \"c b\"; } }\n\n@media (min-width: 840px) {\n  .src-main-___App__containerDetail___33MiA {\n    background-color: #F2F2F2;\n    color: #fff;\n    border-radius: 5px;\n    padding: 20px;\n    font-size: 150%;\n    margin: 10px;\n    display: grid;\n    grid-template-columns: auto;\n    grid-gap: 10%;\n    grid-template-areas: \"s b c\" \"a b c\" \"a b c\"; } }\n\n@media (min-width: 1200px) {\n  .src-main-___App__containerDetail___33MiA {\n    background-color: #F2F2F2;\n    color: #fff;\n    border-radius: 5px;\n    padding: 20px;\n    font-size: 150%;\n    margin: 10px;\n    display: grid;\n    grid-template-columns: auto;\n    grid-gap: 10%;\n    grid-template-areas: \". s b c .\" \". a b c .\" \". a b c .\"; } }\n\n.src-main-___App__title___2Uvb7 {\n  color: #000;\n  text-transform: capitalize;\n  font-size: 1.5em;\n  text-align: left;\n  grid-area: s;\n  border-radius: 10px;\n  margin-bottom: 5px; }\n\n.src-main-___App__pokemonPhoto___1bEUJ {\n  grid-area: a;\n  align-self: start; }\n\n.src-main-___App__pokemonDetails___2eLqG {\n  background-color: #30a7d7;\n  color: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  font-size: 100%;\n  grid-area: b;\n  display: grid;\n  grid-template-columns: auto;\n  grid-gap: 1px; }\n  .src-main-___App__pokemonDetails___2eLqG .src-main-___App__stat___1EgWY {\n    display: block; }\n\n.src-main-___App__pokemonExtras___30Om8 {\n  background-color: #95ccaf;\n  color: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  font-size: 1em;\n  grid-area: c; }\n  .src-main-___App__pokemonExtras___30Om8 .src-main-___App__propertie___3IggU {\n    display: block; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__rootContainer___2BGAH {\n  height: 100%;\n  margin: 10px;\n  display: grid;\n  grid-template-columns: 100%;\n  grid-gap: 50px; }\n\n.src-main-___App__centralize___adJYf {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n  width: 100%;\n  height: 100%; }\n\n.src-main-___App__imgWrapper___1xeHM {\n  width: 100px; }\n\n@-webkit-keyframes src-main-___App__rotating___3MKht {\n  from {\n    -webkit-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n    -o-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes src-main-___App__rotating___3MKht {\n  from {\n    -ms-transform: rotate(0deg);\n    -moz-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  to {\n    -ms-transform: rotate(360deg);\n    -moz-transform: rotate(360deg);\n    -webkit-transform: rotate(360deg);\n    -o-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n.src-main-___App__rotate___2n6I3 {\n  animation: src-main-___App__rotating___3MKht 1s linear infinite; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__buttonBlue___2df4O, .src-main-___App__buttonRed___3p38g, .src-main-___App__buttonAdd___1DfCh, .src-main-___App__buttonRemove___3P6t8 {\n  border-radius: 5px;\n  margin: 0px;\n  color: #FFF;\n  cursor: pointer;\n  border-width: 0px 0px 0px 0px; }\n\n.src-main-___App__buttonBlue___2df4O {\n  font-size: 1.2em;\n  padding: 10px;\n  background-color: #1b82b1;\n  position: relative;\n  width: 40%;\n  justify-self: center; }\n\n.src-main-___App__buttonRed___3p38g {\n  background-color: #ed3237; }\n\n.src-main-___App__buttonAdd___1DfCh {\n  background-color: #89c977; }\n\n.src-main-___App__buttonRemove___3P6t8 {\n  background-color: #ed3237; }\n\nbody {\n  background: url(\"/images/background/01.png\") repeat right top; }\n", ""]);
+exports.push([module.i, ".src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__pokemonCard___2hy06 {\n  background-size: cover;\n  background-color: #F2F2F2;\n  color: #fff;\n  border-radius: 5px;\n  padding: 20px;\n  font-size: 150%; }\n\n.src-main-___App__cardContent___7Gm4B {\n  border-radius: 25px; }\n\n.src-main-___App__itemCentralized___2u3Mk {\n  align-self: center;\n  justify-self: center; }\n\n.src-main-___App__gridContainer___38FDW {\n  margin: 10px;\n  display: grid; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n@media (min-width: 320px) {\n  .src-main-___App__gridPokemons___3xDMy {\n    margin: 10px;\n    display: grid;\n    grid-template-columns: repeat(1, auto);\n    grid-gap: 20px; } }\n\n@media (min-width: 540px) {\n  .src-main-___App__gridPokemons___3xDMy {\n    margin: 10px;\n    display: grid;\n    grid-template-columns: repeat(2, auto);\n    grid-gap: 20px; } }\n\n@media (min-width: 840px) {\n  .src-main-___App__gridPokemons___3xDMy {\n    margin: 10px;\n    display: grid;\n    grid-template-columns: repeat(3, auto);\n    grid-gap: 20px; } }\n\n@media (min-width: 1200px) {\n  .src-main-___App__gridPokemons___3xDMy {\n    margin: 10px;\n    display: grid;\n    grid-template-columns: repeat(4, auto);\n    grid-gap: 20px; } }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__container___1abL6 {\n  margin: 10px;\n  display: grid;\n  grid-template-columns: 245px 50px;\n  grid-gap: 5px; }\n\n.src-main-___App__input___2FVMN {\n  border: 1px solid #BEBEBE;\n  padding: 10px;\n  font-size: 1.2em;\n  margin: 0px; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__containerFilter___U28LW {\n  margin: 10px;\n  display: grid;\n  grid-template-columns: repeat(2, 147.5px);\n  grid-gap: 5px; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n@media (min-width: 320px) {\n  .src-main-___App__containerDetail___33MiA {\n    background-color: #F2F2F2;\n    color: #fff;\n    border-radius: 5px;\n    padding: 20px;\n    font-size: 150%;\n    margin: 10px;\n    display: grid;\n    grid-template-columns: auto;\n    grid-gap: 10%;\n    grid-row-gap: 10px;\n    grid-template-areas: \"s\" \"a\" \"b\" \"c\" \"d\" \"e\"; } }\n\n@media (min-width: 540px) {\n  .src-main-___App__containerDetail___33MiA {\n    background-color: #F2F2F2;\n    color: #fff;\n    border-radius: 5px;\n    padding: 20px;\n    font-size: 150%;\n    margin: 10px;\n    display: grid;\n    grid-template-columns: auto;\n    grid-gap: 10%;\n    grid-row-gap: 10px;\n    grid-template-areas: \"s b b\" \"a b b\" \"a c c\" \"d d d\" \"e e e\"; } }\n\n.src-main-___App__title___2Uvb7 {\n  color: #000;\n  text-transform: capitalize;\n  font-size: 1.5em;\n  text-align: left;\n  grid-area: s;\n  border-radius: 10px;\n  margin-bottom: 5px; }\n\n.src-main-___App__pokemonPhoto___1bEUJ {\n  grid-area: a;\n  align-self: start; }\n\n.src-main-___App__pokemonDetails___2eLqG {\n  background-color: #30a7d7;\n  color: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  font-size: 100%;\n  grid-area: b;\n  display: grid;\n  grid-template-columns: auto;\n  grid-gap: 1px; }\n  .src-main-___App__pokemonDetails___2eLqG .src-main-___App__stat___1EgWY {\n    display: block; }\n\n.src-main-___App__pokemonExtras___30Om8 {\n  background-color: #95ccaf;\n  color: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  font-size: 1em;\n  grid-area: c; }\n  .src-main-___App__pokemonExtras___30Om8 .src-main-___App__propertie___3IggU {\n    display: block; }\n\n.src-main-___App__pokemonAbilities___2_zgV {\n  background-color: #d62d20;\n  color: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  font-size: 1em;\n  grid-area: d; }\n  .src-main-___App__pokemonAbilities___2_zgV span {\n    margin: 10px;\n    display: block-inline; }\n\n.src-main-___App__pokemonTypes___184Gj {\n  background-color: #ddd;\n  color: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  font-size: 1em;\n  grid-area: e; }\n  .src-main-___App__pokemonTypes___184Gj span {\n    margin: 10px;\n    display: block-inline; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__rootContainer___2BGAH {\n  height: 100%;\n  margin: 10px;\n  display: grid;\n  grid-template-columns: 100%;\n  grid-gap: 50px; }\n\n.src-main-___App__centralize___adJYf {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n  width: 100%;\n  height: 100%; }\n\n.src-main-___App__imgWrapper___1xeHM {\n  width: 100px; }\n\n@-webkit-keyframes src-main-___App__rotating___3MKht {\n  from {\n    -webkit-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n    -o-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes src-main-___App__rotating___3MKht {\n  from {\n    -ms-transform: rotate(0deg);\n    -moz-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  to {\n    -ms-transform: rotate(360deg);\n    -moz-transform: rotate(360deg);\n    -webkit-transform: rotate(360deg);\n    -o-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n.src-main-___App__rotate___2n6I3 {\n  animation: src-main-___App__rotating___3MKht 1s linear infinite; }\n\n.src-main-___App__teste___1yKEz {\n  color: red; }\n\n/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.src-main-___App__buttonBlue___2df4O, .src-main-___App__buttonRed___3p38g, .src-main-___App__buttonAdd___1DfCh, .src-main-___App__buttonRemove___3P6t8 {\n  border-radius: 5px;\n  margin: 0px;\n  color: #FFF;\n  cursor: pointer;\n  border-width: 0px 0px 0px 0px; }\n\n.src-main-___App__buttonBlue___2df4O {\n  font-size: 1.2em;\n  padding: 10px;\n  background-color: #1b82b1;\n  position: relative;\n  width: 40%;\n  justify-self: center; }\n\n.src-main-___App__buttonRed___3p38g {\n  background-color: #ed3237; }\n\n.src-main-___App__buttonAdd___1DfCh {\n  background-color: #89c977; }\n\n.src-main-___App__buttonRemove___3P6t8 {\n  background-color: #ed3237; }\n\nspan .src-main-___App__eletric___2J6Dt, span .src-main-___App__grass___1ngrp, span .src-main-___App__bug___1Q5QR, .src-main-___App__fire___SGpmS, span .src-main-___App__fairy___3CDYH, span .src-main-___App__ground___C7nZM, span .src-main-___App__poison___1Mpee, span .src-main-___App__flying___3zet7, span .src-main-___App__normal___15MQx, span .src-main-___App__water___2Mww4 {\n  padding: 5px;\n  border-radius: 5px;\n  color: white; }\n\nspan .src-main-___App__eletric___2J6Dt {\n  background-color: #729f3f; }\n\nspan .src-main-___App__grass___1ngrp {\n  background-color: #9bcc50; }\n\nspan .src-main-___App__bug___1Q5QR {\n  background-color: #729f3f; }\n\n.src-main-___App__fire___SGpmS {\n  background-color: #fd7d24; }\n\nspan .src-main-___App__fairy___3CDYH {\n  background-color: #fdb9e9; }\n\nspan .src-main-___App__ground___C7nZM {\n  background-color: #ab9842; }\n\nspan .src-main-___App__poison___1Mpee {\n  background-color: #b97fc9; }\n\nspan .src-main-___App__flying___3zet7 {\n  background-color: #3dc7ef; }\n\nspan .src-main-___App__normal___15MQx {\n  background-color: #a4acaf; }\n\nspan .src-main-___App__water___2Mww4 {\n  background-color: #3dc7ef; }\n\nbody {\n  background: url(\"/images/background/01.png\") repeat right top; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -2897,6 +2897,8 @@ exports.locals = {
 	"stat": "src-main-___App__stat___1EgWY",
 	"pokemonExtras": "src-main-___App__pokemonExtras___30Om8",
 	"propertie": "src-main-___App__propertie___3IggU",
+	"pokemonAbilities": "src-main-___App__pokemonAbilities___2_zgV",
+	"pokemonTypes": "src-main-___App__pokemonTypes___184Gj",
 	"rootContainer": "src-main-___App__rootContainer___2BGAH",
 	"centralize": "src-main-___App__centralize___adJYf",
 	"imgWrapper": "src-main-___App__imgWrapper___1xeHM",
@@ -2905,7 +2907,17 @@ exports.locals = {
 	"buttonBlue": "src-main-___App__buttonBlue___2df4O",
 	"buttonRed": "src-main-___App__buttonRed___3p38g",
 	"buttonAdd": "src-main-___App__buttonAdd___1DfCh",
-	"buttonRemove": "src-main-___App__buttonRemove___3P6t8"
+	"buttonRemove": "src-main-___App__buttonRemove___3P6t8",
+	"eletric": "src-main-___App__eletric___2J6Dt",
+	"grass": "src-main-___App__grass___1ngrp",
+	"bug": "src-main-___App__bug___1Q5QR",
+	"fire": "src-main-___App__fire___SGpmS",
+	"fairy": "src-main-___App__fairy___3CDYH",
+	"ground": "src-main-___App__ground___C7nZM",
+	"poison": "src-main-___App__poison___1Mpee",
+	"flying": "src-main-___App__flying___3zet7",
+	"normal": "src-main-___App__normal___15MQx",
+	"water": "src-main-___App__water___2Mww4"
 };
 
 /***/ }),
@@ -2961,9 +2973,9 @@ var pokemonLoad = exports.pokemonLoad = function pokemonLoad() {
     dispatch((0, _fetching.request)());
     _axios2.default.get('' + uri + query).then(function (res) {
       dispatch(pokemonLoadSuccess(res, query));
-      (0, _fetching.receive)();
+      dispatch((0, _fetching.receive)());
     }).catch(function (err) {
-      dispatch(pokemonLoadError(err));
+      console.log(err);
       pokemonLoad(uri, query);
     });
   };
@@ -50993,7 +51005,7 @@ exports.default = function () {
     case _actionTypes.POKEMON_LOAD_ERROR:
       return _extends({}, state, { error: action.payload });
     case _actionTypes.POKEMON_LOAD_REPLACE:
-      return _extends({}, state, { list: action.pokemons });
+      return _extends({}, state, { list: action.pokemons, query: action.query });
     default:
       return state;
   }
@@ -51098,7 +51110,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 var _actionTypes = __webpack_require__(8);
 
 exports.default = function () {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
   var action = arguments[1];
 
   switch (action.type) {
@@ -55441,8 +55453,6 @@ var _Button2 = _interopRequireDefault(_Button);
 
 var _pokemonLoad = __webpack_require__(34);
 
-var _pokemonLoad2 = _interopRequireDefault(_pokemonLoad);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var pokemonSearch = function pokemonSearch(props) {
@@ -55471,7 +55481,7 @@ var mapStateToProps = function mapStateToProps(state) {
   return { next: state.pokemon.next };
 };
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return (0, _redux.bindActionCreators)({ pokemonLoad: _pokemonLoad2.default }, dispatch);
+  return (0, _redux.bindActionCreators)({ pokemonLoad: _pokemonLoad.pokemonLoad }, dispatch);
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(pokemonSearch);
@@ -55491,6 +55501,12 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Loading = __webpack_require__(64);
+
+var _Loading2 = _interopRequireDefault(_Loading);
+
+var _reactRedux = __webpack_require__(10);
+
 var _App = __webpack_require__(9);
 
 var _App2 = _interopRequireDefault(_App);
@@ -55501,7 +55517,7 @@ var _pokemon2 = _interopRequireDefault(_pokemon);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = function (props) {
+var pokemonList = function pokemonList(props) {
   var renderPokemons = function renderPokemons() {
     var pokemons = props.pokemons || [];
     return pokemons.map(function (poke) {
@@ -55512,12 +55528,30 @@ exports.default = function (props) {
     });
   };
 
+  var loading = function loading() {
+    var isFetching = props.isFetching;
+
+
+    if (isFetching) {
+      return _react2.default.createElement(_Loading2.default, null);
+    }
+  };
+
   return _react2.default.createElement(
     'div',
     { className: _App2.default.gridPokemons },
+    loading(),
     renderPokemons()
   );
 };
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    isFetching: state.isFetching
+  };
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps)(pokemonList);
 
 /***/ }),
 /* 196 */
@@ -55660,6 +55694,8 @@ var _pokemonDetail = __webpack_require__(199);
 
 var _pokemonDetail2 = _interopRequireDefault(_pokemonDetail);
 
+var _pokemonLoad = __webpack_require__(34);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -55715,7 +55751,7 @@ var PokemonDetail = function (_React$Component) {
       }).map(function (t) {
         return _react2.default.createElement(
           'span',
-          { key: t.type.name, className: _App2.default.type },
+          { key: t.type.name, className: _App2.default[t.type.name] },
           t.type.name
         );
       });
@@ -55750,7 +55786,7 @@ var PokemonDetail = function (_React$Component) {
           isFetching = _props.isFetching;
 
 
-      if (isFetching) {
+      if (isFetching || !pokemon) {
         return _react2.default.createElement(_Loading2.default, null);
       }
 
@@ -55791,7 +55827,7 @@ var PokemonDetail = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: _App2.default.pokemonAblities },
+            { className: _App2.default.pokemonAbilities },
             this.renderAbilities(pokemon)
           ),
           _react2.default.createElement(
@@ -55815,7 +55851,7 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return (0, _redux.bindActionCreators)({ pokemonDetail: _pokemonDetail2.default }, dispatch);
+  return (0, _redux.bindActionCreators)({ pokemonDetail: _pokemonDetail2.default, pokemonLoad: _pokemonLoad.pokemonLoad }, dispatch);
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(PokemonDetail);

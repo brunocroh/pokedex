@@ -1,9 +1,11 @@
 import React from 'react'
+import Loading from 'Template/Loading'
+import { connect } from 'react-redux'
 import styles from 'Main/App.scss'
 
 import Pokemon from './pokemon'
 
-export default props => {
+const pokemonList = props => {
   const renderPokemons = () => {
     const pokemons = props.pokemons || []
     return pokemons.map(poke => (
@@ -14,9 +16,27 @@ export default props => {
     ))
   }
 
+  const loading = () => {
+    const { isFetching } = props
+
+    if (isFetching) {
+      return <Loading />
+    }
+  }
+
+
   return (
     <div className={styles.gridPokemons}>
-      {renderPokemons()}
+      { loading() }
+      { renderPokemons() }
     </div>
   )
 }
+
+const mapStateToProps = state => (
+  {
+    isFetching: state.isFetching
+  }
+)
+
+export default connect(mapStateToProps)(pokemonList)

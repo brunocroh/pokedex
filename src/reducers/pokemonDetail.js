@@ -3,7 +3,7 @@ import {
   POKEMON_DETAIL_SUCCESS
 } from 'Constants/actionTypes'
 
-export default (state = { }, action) => {
+export default (state = null, action) => {
   switch (action.type) {
     case POKEMON_DETAIL_SUCCESS:
       return {

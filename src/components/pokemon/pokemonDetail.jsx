@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import Loading from 'Template/Loading'
 
 import pokemonDetail from './actions/pokemonDetail'
+import { pokemonLoad } from './actions/pokemonLoad'
 
 class PokemonDetail extends React.Component {
   componentWillMount () {
@@ -30,7 +31,7 @@ class PokemonDetail extends React.Component {
     return pokemon.types
       .sort((a, b) => a.slot - b.slot)
       .map(t => (
-        <span key={t.type.name} className={styles.type} >{t.type.name}</span>
+        <span key={t.type.name} className={styles[t.type.name]} >{t.type.name}</span>
       ))
   }
 
@@ -46,7 +47,7 @@ class PokemonDetail extends React.Component {
   render () {
     const { pokemon, isFetching } = this.props
 
-    if (isFetching) {
+    if (isFetching || !pokemon) {
       return <Loading />
     }
 
@@ -68,7 +69,7 @@ class PokemonDetail extends React.Component {
           <div className={styles.pokemonExtras}>
             {this.renderProperties(pokemon)}
           </div>
-          <div className={styles.pokemonAblities}>
+          <div className={styles.pokemonAbilities}>
             {this.renderAbilities(pokemon)}
           </div>
           <div className={styles.pokemonTypes}>
@@ -87,6 +88,6 @@ const mapStateToProps = state => (
     isFetching: state.isFetching
   }
 )
-const mapDispatchToProps = dispatch => bindActionCreators({ pokemonDetail }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ pokemonDetail, pokemonLoad }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(PokemonDetail)

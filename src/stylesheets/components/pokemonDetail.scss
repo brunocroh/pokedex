@@ -3,17 +3,19 @@
 @mixin baseContainer {
   @include card;
   @include grid(10%, auto);
+  grid-row-gap: 10px;
 }
 
 @media (min-width: 320px){
   .containerDetail {
     @include baseContainer;
-    grid-row-gap: 10px;
     grid-template-areas:
     "s"
     "a"
     "b"
-    "c";
+    "c"
+    "d"
+    "e";
   }
 } 
 
@@ -21,34 +23,13 @@
   .containerDetail {
     @include baseContainer;
     grid-template-areas:
-    "s b"
-    "a b"
-    "a b"
-    "c b"
-    "c b";
+    "s b b"
+    "a b b"
+    "a c c"
+    "d d d"
+    "e e e";
   }
 } 
-
-@media (min-width: 840px){
-  .containerDetail {
-    @include baseContainer;
-    grid-template-areas:
-    "s b c"
-    "a b c"
-    "a b c";
-  }
-} 
-
-@media (min-width: 1200px){
-  .containerDetail {
-    @include baseContainer;
-    grid-template-areas:
-    ". s b c ."
-    ". a b c ."
-    ". a b c .";
-  }
-} 
-
 
 .title {
   color: #000;
@@ -82,5 +63,23 @@
   grid-area: c;
   .propertie {
     display: block;
+  }
+}
+
+.pokemonAbilities {
+  @include card(#d62d20, #fff, 10px, 1em);
+  grid-area: d;
+  span {
+    margin: 10px;
+    display: block-inline;
+  }
+}
+
+.pokemonTypes {
+  @include card(#ddd, #fff, 10px, 1em);
+  grid-area: e;
+  span {
+    margin: 10px;
+    display: block-inline;
   }
 }

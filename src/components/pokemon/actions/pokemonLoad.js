@@ -40,10 +40,10 @@ export const pokemonLoad = (
     axios.get(`${uri}${query}`)
       .then(res => {
         dispatch(pokemonLoadSuccess(res, query))
-        receive()
+        dispatch(receive())
       })
       .catch(err => {
-        dispatch(pokemonLoadError(err))
+        console.log(err)
         pokemonLoad(uri, query)
       })
   }

@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import Button from 'Template/Button'
-import pokemonLoad from './actions/pokemonLoad.js'
+import { pokemonLoad } from './actions/pokemonLoad.js'
 
 const pokemonSearch = props => {
   const handleKeyPress = (e) => {

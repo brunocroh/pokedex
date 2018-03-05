@@ -1,0 +1,55 @@
+%badge {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+span .eletric{
+  @extend %badge;
+  background-color: #729f3f;
+}
+
+span .grass{
+  @extend %badge;
+  background-color: #9bcc50;
+}
+
+span .bug{
+  @extend %badge;
+  background-color: #729f3f;
+}
+
+.fire{
+  @extend %badge;
+  background-color: #fd7d24;
+}
+
+span .fairy{
+  @extend %badge;
+  background-color: #fdb9e9;
+}
+
+span .ground{
+  @extend %badge;
+  background-color: #ab9842;
+}
+
+span .poison{
+  @extend %badge;
+  background-color: #b97fc9;
+}
+
+span .flying{
+  @extend %badge;
+  background-color: #3dc7ef;
+}
+
+span .normal{
+  @extend %badge;
+  background-color: #a4acaf;
+}
+
+span .water{
+  @extend %badge;
+  background-color: #3dc7ef;
+}

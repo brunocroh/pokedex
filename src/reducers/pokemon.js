@@ -16,7 +16,7 @@ export default (state = INITIAL_STATE, action) => {
     case POKEMON_LOAD_ERROR:
       return { ...state, error: action.payload }
     case POKEMON_LOAD_REPLACE:
-      return { ...state, list: action.pokemons }
+      return { ...state, list: action.pokemons, query: action.query }
     default:
       return state
   }
